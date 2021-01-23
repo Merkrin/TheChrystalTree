@@ -1,5 +1,8 @@
 package ru.ibarciuc.tree.utils;
 
+/**
+ * Life stages enumerator taken from the "Sims 4"-universe.
+ */
 public enum LifeStages {
     BABY("Baby"),
     TODDLER("Toddler"),
@@ -11,11 +14,21 @@ public enum LifeStages {
 
     private String lifeStage;
 
-    LifeStages(String ageGroup) {
-        this.lifeStage = ageGroup;
+    /**
+     * Constructor of the enumerator, that sets custom value.
+     *
+     * @param lifeStage value to set
+     */
+    LifeStages(String lifeStage) {
+        this.lifeStage = lifeStage;
     }
 
-    public String getLifeStage(){
+    /**
+     * Getter of the life stage value.
+     *
+     * @return string, that contains value of the life stage
+     */
+    public String getLifeStage() {
         return lifeStage;
     }
 }

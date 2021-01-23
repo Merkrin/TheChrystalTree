@@ -1,5 +1,8 @@
 package ru.ibarciuc.exceptions;
 
+/**
+ * Custom exception class for all the errors related to parents.
+ */
 public class ParentsException extends RuntimeException {
     public ParentsException() {
         super();
